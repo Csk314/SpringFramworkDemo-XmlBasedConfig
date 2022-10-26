@@ -1,6 +1,10 @@
 package demo;
 
 public class Doctor {
+    public Doctor(String qualification) {
+        this.qualification = qualification;
+    }
+
     public String getQualification() {
         return qualification;
     }
@@ -10,17 +14,9 @@ public class Doctor {
     }
 
     String qualification;
-    public Nurse getNurse1() {
-        return nurse1;
-    }
 
-    public void setNurse1(Nurse nurse1) {
-        this.nurse1 = nurse1;
-    }
-
-    Nurse nurse1;
     public void assist(){
-        nurse1.assist();
+
         System.out.println("Doctor is assisting");
     }
 }

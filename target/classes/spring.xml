@@ -5,8 +5,9 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="doctor" class="demo.Doctor">
-        <property name="nurse1" ref="nurse"></property>
-        <property name="qualification" value="MBBS"></property>
+        <constructor-arg value="MBBS Through COnstructor"></constructor-arg>
+<!--        <property name="nurse1" ref="nurse"></property>-->
+<!--        <property name="qualification" value="MBBS"></property>-->
         <!-- collaborators and configuration for this bean go here -->
     </bean>
 
