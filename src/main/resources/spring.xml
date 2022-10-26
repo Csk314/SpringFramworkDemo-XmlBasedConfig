@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+<context:component-scan base-package="demo"></context:component-scan>
+<!--    <bean id="doctor" class="demo.Doctor">-->
+<!--        <constructor-arg value="MBBS Through COnstructor"></constructor-arg>-->
+<!--&lt;!&ndash;        <property name="nurse1" ref="nurse"></property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="qualification" value="MBBS"></property>&ndash;&gt;-->
+<!--        &lt;!&ndash; collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
 
-    <bean id="doctor" class="demo.Doctor">
-        <constructor-arg value="MBBS Through COnstructor"></constructor-arg>
-<!--        <property name="nurse1" ref="nurse"></property>-->
-<!--        <property name="qualification" value="MBBS"></property>-->
-        <!-- collaborators and configuration for this bean go here -->
-    </bean>
-
-    <bean id="nurse" class="demo.Nurse">
-        <!-- collaborators and configuration for this bean go here -->
-    </bean>
+<!--    <bean id="nurse" class="demo.Nurse">-->
+<!--        &lt;!&ndash; collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
 
     <!-- more bean definitions go here -->
 
